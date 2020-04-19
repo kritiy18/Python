@@ -1,9 +1,15 @@
+'''To search a pattern in a given text.'''
+
 def search(txt,ptr):
     m=len(ptr)
     n=len(txt)
     # where txt is text and ptr is pattern string
+    #along the text
     for i in range(n-m+1):
         j=0
+        
+        #along the pattern
+
         for j in range(m):
             if txt[i+j]!=ptr[j]:
                 break
